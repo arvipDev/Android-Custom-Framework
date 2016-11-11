@@ -1,0 +1,12 @@
+{
+  "MainActivity":
+  {
+    "IDatabaseSvc": "services.LoginDBSvcImpl",
+    "IRequestSvc": "services.LoginRequestSvcImpl"
+  }
+  "MainActivity":
+  {
+    "IDatabaseSvc": "services.LoginDBSvcImpl",
+    "IRequestSvc": "services.LoginRequestSvcImpl"
+  }
+}
