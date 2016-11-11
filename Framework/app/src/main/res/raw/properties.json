@@ -1,11 +1,9 @@
 {
-  "FirstActivity":
-  {
+  "FirstActivity": {
     "IDatabaseSvc": "services.FirstDatabaseSvcImpl",
     "IRequestSvc": "services.FirstRequestSvcImpl"
   },
-  "SecondActivity":
-  {
+  "SecondActivity": {
     "IDatabaseSvc": "services.SecondDatabaseSvcImpl",
     "IRequestSvc": "services.SecondRequestSvcImpl"
   }

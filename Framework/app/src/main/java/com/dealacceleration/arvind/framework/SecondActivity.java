@@ -2,6 +2,10 @@ package com.dealacceleration.arvind.framework;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+
+import services.Factory;
+import services.IService;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -9,5 +13,9 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        Factory fact = Factory.getInstance();
+        IService service = fact.getService("IRequestSvc", this);
+        Log.d("Second svc ", service.getServiceName());
     }
 }

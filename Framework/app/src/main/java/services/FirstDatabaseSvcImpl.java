@@ -6,8 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
  * Created by ARVIND on 11/10/2016.
  */
 
-public class FirstDatabaseSvcImpl implements IDatabaseSvc
-{
+public class FirstDatabaseSvcImpl implements IDatabaseSvc {
 
     public final static String NAME = "FirstDatabaseSvcImpl";
 
@@ -28,6 +27,6 @@ public class FirstDatabaseSvcImpl implements IDatabaseSvc
 
     @Override
     public String getServiceName() {
-        return null;
+        return NAME;
     }
 }

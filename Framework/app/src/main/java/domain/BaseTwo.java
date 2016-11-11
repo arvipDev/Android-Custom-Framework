@@ -4,8 +4,7 @@ package domain;
  * Created by ARVIND on 11/10/2016.
  */
 
-public class BaseTwo
-{
+public class BaseTwo {
     //Base classes
     //setters and getters
     // override toString, hashCode, equals

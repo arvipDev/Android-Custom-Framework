@@ -21,6 +21,6 @@ public class FirstRequestSvcImpl implements IRequestSvc
 
     @Override
     public String getServiceName() {
-        return null;
+        return NAME;
     }
 }

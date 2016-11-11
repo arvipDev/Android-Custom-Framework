@@ -8,8 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by ARVIND on 11/10/2016.
  */
 
-public class FirstDatabaseSvcHelper extends SQLiteOpenHelper implements IDatabaseSvc
-{
+public class FirstDatabaseSvcHelper extends SQLiteOpenHelper implements IDatabaseSvc {
 
     public final static String NAME = "FirstDatabaseSvcImpl";
 
