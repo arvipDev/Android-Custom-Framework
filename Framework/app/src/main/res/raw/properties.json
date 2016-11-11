@@ -1,12 +1,12 @@
 {
-  "MainActivity":
+  "FirstActivity":
   {
-    "IDatabaseSvc": "services.LoginDBSvcImpl",
-    "IRequestSvc": "services.LoginRequestSvcImpl"
-  }
-  "MainActivity":
+    "IDatabaseSvc": "services.FirstDatabaseSvcImpl",
+    "IRequestSvc": "services.FirstRequestSvcImpl"
+  },
+  "SecondActivity":
   {
-    "IDatabaseSvc": "services.LoginDBSvcImpl",
-    "IRequestSvc": "services.LoginRequestSvcImpl"
+    "IDatabaseSvc": "services.SecondDatabaseSvcImpl",
+    "IRequestSvc": "services.SecondRequestSvcImpl"
   }
 }
