@@ -4,8 +4,7 @@ package services;
  * Created by ARVIND on 11/10/2016.
  */
 
-public class FirstRequestSvcImpl implements IRequestSvc
-{
+public class FirstRequestSvcImpl implements IRequestSvc {
 
     public final static String NAME = "FirstRequestSvcImpl";
 

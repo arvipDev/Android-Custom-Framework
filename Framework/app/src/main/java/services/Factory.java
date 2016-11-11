@@ -1,7 +1,6 @@
 package services;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.dealacceleration.arvind.framework.R;
 
@@ -39,7 +38,6 @@ public class Factory {
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        Log.d("Text 3", " out");
         return null;
     }
 

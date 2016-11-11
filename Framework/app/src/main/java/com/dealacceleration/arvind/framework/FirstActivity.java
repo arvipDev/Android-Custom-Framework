@@ -1,12 +1,10 @@
 package com.dealacceleration.arvind.framework;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-
-import java.io.Serializable;
 
 import services.Factory;
 import services.IService;

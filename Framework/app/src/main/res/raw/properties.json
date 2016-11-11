@@ -1,19 +1,9 @@
 {
-<<<<<<< HEAD
-  "FirstActivity":
-  {
-    "IDatabaseSvc": "services.FirstDatabaseSvcImpl",
-    "IRequestSvc": "services.FirstRequestSvcImpl"
-  },
-  "SecondActivity":
-  {
-=======
   "FirstActivity": {
     "IDatabaseSvc": "services.FirstDatabaseSvcImpl",
     "IRequestSvc": "services.FirstRequestSvcImpl"
   },
   "SecondActivity": {
->>>>>>> code
     "IDatabaseSvc": "services.SecondDatabaseSvcImpl",
     "IRequestSvc": "services.SecondRequestSvcImpl"
   }
