@@ -4,8 +4,7 @@ package services;
  * Created by ARVIND on 11/10/2016.
  */
 
-public class SecondRequestSvcImpl implements IRequestSvc
-{
+public class SecondRequestSvcImpl implements IRequestSvc {
 
     public final static String NAME = "SecondRequestSvcImpl";
 
@@ -21,6 +20,6 @@ public class SecondRequestSvcImpl implements IRequestSvc
 
     @Override
     public String getServiceName() {
-        return null;
+        return NAME;
     }
 }

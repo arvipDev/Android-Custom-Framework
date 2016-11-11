@@ -1,6 +1,7 @@
 package services;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.dealacceleration.arvind.framework.R;
 
@@ -16,22 +17,20 @@ import java.io.InputStreamReader;
  * Created by ARVIND on 11/10/2016.
  */
 
-public class Factory
-{
+public class Factory {
     private static Factory factory = new Factory();
 
-    private Factory () {};
+    private Factory() {
+    }
 
-    public static Factory getInstance ()
-    {
+    public static Factory getInstance() {
         return factory;
     }
 
-    public IService getService (String name, Context context)
-    {
-        Class c = null;
+    public IService getService(String name, Context context) {
+        Class c;
         try {
-            c = Class.forName(getImplName (name, context) );
+            c = Class.forName(getImplName(name, context));
             return (IService) c.newInstance();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -40,11 +39,11 @@ public class Factory
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
+        Log.d("Text 3", " out");
         return null;
     }
 
-    private String getImplName (String name, Context context)
-    {
+    private String getImplName(String name, Context context) {
         InputStream in = context.getResources().openRawResource(R.raw.properties);
         InputStreamReader reader = new InputStreamReader(in);
         BufferedReader buffer = new BufferedReader(reader);
@@ -54,8 +53,7 @@ public class Factory
         JSONObject readJSON, key;
 
         try {
-            while ( (prop = buffer.readLine()) != null )
-            {
+            while ((prop = buffer.readLine()) != null) {
                 build.append(prop);
                 build.append("\n");
             }
@@ -67,9 +65,7 @@ public class Factory
             readJSON = new JSONObject(build.toString());
             key = readJSON.getJSONObject(context.getClass().getSimpleName());
             implName = key.getString(name);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
+        } catch (IOException | JSONException e) {
             e.printStackTrace();
         }
 

@@ -6,14 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
  * Created by ARVIND on 11/10/2016.
  */
 
-public class SecondDatabaseSvcImpl implements IDatabaseSvc
-{
+public class SecondDatabaseSvcImpl implements IDatabaseSvc {
 
     public final static String NAME = "SecondDatabaseSvcImpl";
 
     @Override
     public String getServiceName() {
-        return null;
+        return NAME;
     }
 
     @Override
